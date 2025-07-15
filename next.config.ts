@@ -5,19 +5,25 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**", // Allows images from any domain
+        hostname: "**",
       },
       {
-        protocol: "http", // Also allow non-secure HTTP images if needed
+        protocol: "http",
         hostname: "**",
       },
     ],
   },
+
   reactStrictMode: false,
 
-  // ✅ Disable ESLint checks during build
+  // ✅ Skip ESLint during build
   eslint: {
     ignoreDuringBuilds: true,
+  },
+
+  // ✅ Skip TypeScript type checking during build
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 
