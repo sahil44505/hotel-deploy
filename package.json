@@ -13,6 +13,7 @@
     "@kinde-oss/kinde-auth-nextjs": "^2.4.6",
     "@prisma/client": "^6.1.0",
     "axios": "^1.7.9",
+    "cashfree-pg": "^5.0.8",
     "child_process": "^1.0.2",
     "date-fns": "^4.1.0",
     "hotel-booking": "file:",
