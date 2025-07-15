@@ -1,4 +1,6 @@
 'use client'
+export const dynamic = "force-dynamic";
+
 import { Toaster, toast } from "sonner";
 import { useEffect, useState } from "react";
 import Hero from "./components/Hero/Hero";
