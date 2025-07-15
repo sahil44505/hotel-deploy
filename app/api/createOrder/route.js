@@ -6,7 +6,7 @@ import getCurrentUser from "@/app/actions/getCurrentUser";
 
 Cashfree.XClientId = process.env.NEXT_PUBLIC_CASHFREE_APP_ID;
 Cashfree.XClientSecret = process.env.NEXT_PUBLIC_CASHFREE_SECRET_KEY;
-Cashfree.XEnvironment = Cashfree.Environment.SANDBOX;
+Cashfree.XEnvironment = process.env.NEXT_PUBLIC_CASHFREE_APP_MODE;
 const exchangeRate = 86;
 
 export async function POST(req) {
