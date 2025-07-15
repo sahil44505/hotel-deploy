@@ -1,5 +1,5 @@
 'use client';
-import { useHotel } from "@/context/Hotelscontext";
+
 import HotelMap from "./HotelMap";
 import { useEffect, useState } from "react";
 import { Range } from "react-date-range";
@@ -21,7 +21,7 @@ const HotelListing: React.FC<HotellistingProps> = ({ title }) => {
   const [datehotel, setdatehotel] = useState<any[]>([])
   const [priceRange, setPriceRange] = useState(270);
   const [isdata,setisdata] = useState(false)
-  const [hasHotels, setHasHotels] = useState(true)
+  
  
 
   interface DateRange {
