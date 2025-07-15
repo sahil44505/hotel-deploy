@@ -2,7 +2,7 @@
 export const dynamic = "force-dynamic";
 
 import { Toaster, toast } from "sonner";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Hero from "./components/Hero/Hero";
 import Categories from "./components/navbar/Categories";
 
@@ -67,13 +67,16 @@ export default function Home() {
   return (
     <>
     <Hero/>
-    
+    <Suspense fallback={<p>Loading...</p>}>
+        
+     
     <SearchHero setNearby={setNearbyHotels}/>
     <CategoryHeader/>
    
     
     <Categories/>
     <Nearby hotels={nearbyHotels}/>
+     </Suspense>
      
     </>
   );
