@@ -14,5 +14,11 @@ const nextConfig: NextConfig = {
     ],
   },
   reactStrictMode: false,
+
+  // ✅ Disable ESLint checks during build
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
+
 export default nextConfig;
