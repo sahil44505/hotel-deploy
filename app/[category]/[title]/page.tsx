@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import getbookings from "@/app/actions/getbookings";
 import getCurrentUser from "@/app/actions/getCurrentUser";
 import YouTubeResults from "@/app/components/YoutubeResults";
