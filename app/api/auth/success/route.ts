@@ -36,5 +36,5 @@ try{
     
    
     
-    return NextResponse.redirect("http://localhost:3000");
+    return NextResponse.redirect("https://hotel-deploy-five.vercel.app/");
 }
