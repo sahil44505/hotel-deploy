@@ -20,7 +20,7 @@ const Logo = () => {
     className="hidden md:block cursor-pointer"
     height='100'
     width='100'
-    src="/images/Logo.svg"
+    src="/images/logo.svg"
     />
        <div className="absolute left-[180px]">
       <p className=" font-bold  text-2xl ">Ryokan</p>
